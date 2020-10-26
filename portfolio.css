@@ -1,0 +1,281 @@
+body{
+	padding: none;
+	margin: 0;
+	background-image: url('bodyback.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: police1;
+}
+
+
+
+@font-face{
+	src: url('polices/police1.otf');
+	font-family: police1;
+}
+
+header a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+
+#menu{
+	background-color: black;
+	background-size: cover;
+	width: 100vw;
+	height: 5vh;
+	position: fixed;
+	top:0;
+	text-align: left;
+	z-index:3;
+	box-shadow: 0 10px 10px white;
+	animation: 5s 0.1s infinite light;
+}
+.menu1, .menu2, .menu3{
+	float: left;
+	display: inline-block;
+	margin-right: 4em;
+	margin-top: -0.6%;
+}
+#menu li a:hover{
+	color: orange;
+}
+#menu li a{
+	animation: 5s infinite 0.1s textshadow;
+}
+
+/*SUBMENU STYLE*/
+.sub2, .sub3{
+	position: absolute;
+	opacity: 0;
+	list-style: none;
+	list-style-type: none;
+	width: 6%;
+	padding: 0.5% 2% 0.5% 1.7%;
+	border-bottom: 10px solid black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 0.9em;
+}
+.sub2, .sub3:hover{
+	background-color: black;
+}
+
+/*SUBMENU APPEAR*/
+li.menu2:hover .sub2{
+	display: block;
+	background-color: black;
+	opacity: 1;
+	transform: translate(-15px, 0px);
+	transition: 0.6s;
+}
+li.menu3:hover .sub3{
+	display: block;
+	background-color: black;
+	opacity: 1;
+	transform: translate(-15px, 0px);
+	transition: 0.6s;
+}
+
+/*SLIDER BUILD*/
+#box_slider{
+	width: 44vw;
+	position: absolute;
+	overflow: hidden;
+	left: 28vw;
+	padding-top: 8vh;
+}
+
+#box_slider:hover .slider{
+	animation-play-state: paused;
+}
+
+.slider{
+	display: flex;
+	width: 40vw;
+	position: relative;
+	left: 0;
+	animation: 15s ease-in 1s infinite slidein;
+}
+
+.slide{
+	margin: 15vh 0 0 0;
+	padding: 2vw;
+}
+
+.slide img{
+	width: 40vw;
+	border: solid 2px black;
+	box-shadow: 10px 10px 10px white;
+	animation: 5s infinite 0.1s light3;
+}
+
+.slide img:hover{
+	opacity: 0.8;
+}
+
+figcaption{
+	text-align: center;
+	padding: 10px;
+	color: white;
+}
+
+/*ANIMATION*/
+/*ANIMATE SLIDER*/
+@keyframes slidein{
+	0%{transform: translateX(0);}
+	10%{transform: translateX(0);}
+	20%{transform: translateX(-44vw);}
+	30%{transform: translateX(-44vw);}
+	40%{transform: translateX(-44vw);}
+	50%{transform: translateX(-44vw);}
+	60%{transform: translateX(-88vw);}
+	70%{transform: translateX(-88vw);}
+	80%{transform: translateX(-88vw);}
+	90%{transform: translateX(-88vw);}
+	100%{transform: translateX(0);}
+}
+
+/*ANIMATE LIGHT*/
+@keyframes light{
+	0%{box-shadow: 0 10px 10px white;}
+	20%{box-shadow: none;}
+	40%{box-shadow: 0 10px 10px white;}
+	60%{box-shadow: 0 10px 10px rgb(214, 11, 11);}
+	80%{box-shadow: 0 10px 10px rgb(11, 211, 21);}
+	100%{box-shadow: 0 10px 10px rgb(231, 216, 9);}
+}
+
+@keyframes light2{
+	0%{box-shadow: 0 -10px 10px white;}
+	20%{box-shadow: none;}
+	40%{box-shadow: 0 -10px 10px rgb(223, 11, 177);}
+	60%{box-shadow: 0 -10px 10px rgb(213, 236, 6);}
+	80%{box-shadow: 0 -10px 10px rgb(226, 10, 10);}
+	100%{box-shadow: 0 -10px 10px rgb(16, 212, 238);}
+}
+
+@keyframes light3{
+	0%{box-shadow: 0 0 20px white;}
+	20%{box-shadow: none;}
+	40%{box-shadow: 0 0 20px rgb(150, 79, 21);}
+	60%{box-shadow: 0 0 20px rgb(243, 241, 241);}
+	80%{box-shadow: 0 0 20px rgb(134, 10, 118);}
+	100%{box-shadow: 0 0 20px rgb(206, 5, 5);}
+}
+
+@keyframes textshadow{
+	0%{color: white;}
+	20%{color: #2B2A29;}
+	40%{color: rgb(15, 179, 37);}
+	60%{color: rgb(12, 204, 238);}
+	80%{color: rgb(47, 12, 243);}
+	100%{color: rgb(221, 236, 10);}
+}
+
+@keyframes network{
+	0%{filter: grayscale(0)}
+	20%{filter: grayscale(100%)}
+	40%{filter: grayscale(0)}
+	60%{filter: grayscale(0)}
+	80%{filter: grayscale(0)}
+	100%{filter: grayscale(0)}
+}
+
+/*PRESENTATION BLOC*/
+.empty_area{
+	height: 100vh;
+}
+
+.empty_area2{
+	margin-bottom: 20vh;
+}
+
+.either{
+	color: white;
+	margin-left: 2vw;
+}
+
+.exemple{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.img_exemple{
+	background-color: black;
+	color: white;
+	width: 30vw;
+	height: 40vh;
+	animation: 5s infinite 0.1s light3;
+}
+
+.img_exemple figure{
+	width: 100%;
+	padding: none;
+	margin: 0;
+}
+
+.img_exemple figure img{
+	max-width: 100%;
+}
+
+/*FOOTER*/
+#last_content{
+	width: 100%;
+	background-color: black;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	color: white;
+	justify-content: space-between;
+	height: 10vh;
+	box-shadow: 0 -10px 10px white;
+	animation: 5s infinite 0.1s light2;
+}
+
+.watermark img{
+	width: 15vw;
+	margin-top: -8%;
+	margin-left: 10%;
+}
+
+.network{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 25%;
+	padding: 1% 0;
+	margin-left: 3%;
+}
+
+.network img{
+	width: 3vw;
+	border-radius: 10px;
+	animation: 5s infinite 0.1s network;
+	
+}
+
+.network img:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+
+.link{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 30%;
+	padding: 1% 0;
+}
+
+.link a{
+	color: white;
+	text-decoration: none;
+	animation: 5s infinite 0.1s textshadow;
+}
+

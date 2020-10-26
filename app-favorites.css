@@ -1,0 +1,46 @@
+.applicationenligne{
+    display: flex;
+    
+    justify-content: center;
+    border-radius: 100px;
+    
+}
+
+.applicationenligne table tr td{
+    border-bottom:solid 2px red;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    
+}
+img{
+    border-radius: 50px;
+}
+
+.barreprogressive{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin: 0 auto 20px auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.d1, .d2, .d3{
+    animation-name: taille;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.d2:hover{
+    animation-play-state: paused;
+}
+.d3:active{
+    animation-play-state: paused;
+}
+@keyframes taille{
+    from{width: 100%;}
+    50%{width: 50%;}
+    to{width: 100%;}
+}

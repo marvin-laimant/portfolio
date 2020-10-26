@@ -1,0 +1,54 @@
+
+.applicationenligne{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: black;
+}
+
+
+
+.titre{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+
+}
+
+body{
+
+    background-image: url(app1111.jpg);
+    margin: 0;
+    padding: none;
+    
+}
+
+.paragraphe{
+    display: flex;
+    color: white;
+    font-size: 1.2em;
+}
+
+.face img{
+    width: 3vw;
+    justify-content: right;
+   
+}
+
+.applicationenligne img{
+    display: flex;
+    border-radius: 20px;
+}
+
+.face{
+    
+    display:flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

@@ -1,0 +1,253 @@
+html{height: 100vh;}
+
+body{
+	min-height: 100vh;
+	min-width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: none;
+	background-image: url('STYLE/bodyback.jpg');
+	background-attachment: fixed;
+}
+
+img:not(.leaf){
+	width: 20vw;
+	border-radius: 10px;
+	filter: grayscale(0);
+}
+	img:hover{
+		opacity: 0.9;
+		filter: grayscale(100);
+		cursor: pointer;
+	}
+
+@font-face{
+	src: url('POLICE/police1full.ttf');
+	font-family: 'police1';
+}
+
+/*ALL ENTITIES*/
+#box_description{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 70vh;
+	margin-top: -15vh;
+}
+
+.description{
+	width: 70vw;
+	height: 40vh;
+	background-color: #E9F099;
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px black;
+	display: flex;
+	justify-content: space-between;
+}
+	.description p{text-align: justify; padding: 2%; font-family: trebuchet, sans-serif;}
+	.description ul{text-align: justify; font-family: trebuchet, sans-serif;}
+	.description h2{font-family: police1; text-align: center;}
+	.description a{text-decoration: none; color: orange; font-weight: bold;}
+	.description a:hover{color: gold;}
+
+/*ACCUEIL*/
+#middle_accueil{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+.title{
+	font-family: police1;
+	color: white;
+	margin-left: 20vw;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+/*PRESENTATION*/
+main{
+	position: relative;
+}
+
+.presentation{
+	display: flex;
+	width: 98vw;
+	height: 80vh;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+.presentation h3{
+	background-color: gray;
+	border-radius: 10px;
+}
+.boxp{
+	animation: 5s ease-in-out infinite float;
+}
+	.box_plant{animation: 5s ease-in-out infinite float;}
+		.box_cannabis{animation: 5s ease-in-out infinite float;}
+		.box_geranium{animation: 5s ease-in-out infinite float; animation-delay: 300ms;}
+		.box_basilic{animation: 5s ease-in-out infinite float; animation-delay: 600ms;}
+	.box_flower{animation: 5s ease-in-out infinite float; animation-delay: 300ms;}
+		.box_rose{animation: 5s ease-in-out infinite float;}
+		.box_chrysantheme{animation: 5s ease-in-out infinite float; animation-delay: 300ms;}
+		.box_coquelicot{animation: 5s ease-in-out infinite float; animation-delay: 600ms;}
+	.box_tree{animation: 5s ease-in-out infinite float; animation-delay: 600ms;}
+		.box_plaqueminier{animation: 5s ease-in-out infinite float;}
+		.box_abricotier{animation: 5s ease-in-out infinite float; animation-delay: 300ms;}
+		.box_cocotier{animation: 5s ease-in-out infinite float; animation-delay: 600ms;}
+	.box_vegetable{animation: 5s ease-in-out infinite float; animation-delay: 900ms;}
+		.box_navet{animation: 5s ease-in-out infinite float;}
+		.box_radis{animation: 5s ease-in-out infinite float; animation-delay: 300ms;}
+		.box_salade{animation: 5s ease-in-out infinite float; animation-delay: 600ms;}
+
+article.text_presentation{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30vh;
+}
+.page{
+	padding: 0.5%; 
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: -10px 0 20px black;
+}
+.text_presentation h1, .text_presentation h2, .text_presentation h3{
+	text-decoration: underline;
+	font-family: police1;
+	color: #006026;
+}
+	.text_presentation h3{font-style: italic;}
+	.text_presentation p{font-family: trebuchet, sans-serif; text-align: justify;}
+	.text_presentation a{color: orange; text-decoration: none; font-weight: bold;}
+		.text_presentation a:hover{color: gold;}
+.leaf{width: 2vw;}
+
+.h_align{
+	background-color: white; 
+	width: 60vw; 
+	padding: 4vh 2vw;
+	box-shadow: 10px 10px 30px black;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top: solid 10px black;
+	border-right: solid 20px black;
+	border-bottom: solid 10px black;
+}
+
+/*PLANTES*/
+.box_description{
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	background-color: rgba(233, 240, 153, 50%);
+	margin-bottom: 40vh;
+	border-radius: 20px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+	.left_content_plant{
+		width: 20%; 
+		background-image: url('STYLE/plantportrait.jpg'); 
+		border-radius: 20px 0 0 20px;
+		background-size: cover;
+	}
+	article.description_content{
+		width: 50%; 
+		height: 50vh; 
+		background-color: #006026; 
+		align-self: center;
+		border-radius: 20px 0 20px 20px;
+		font-family: trebuchet, sans-serif;
+		font-size: 1.1em;
+	}
+		article.description_content p{text-align: justify; padding: 0 2%;}
+		article.description_content img{width: 100%;}
+	.right_content{width: 30%; height:15vh; background-color: #006026; border-radius: 0 20px 0 0;}
+		.right_content h1{font-family: police1; text-align: center;}
+		
+/*FLEURS*/
+.left_content_flower{
+	width: 20%; 
+	background-image: url('STYLE/flowerportrait.jpg'); 
+	border-radius: 20px 0 0 20px;
+	background-size: cover;
+}
+
+/*ARBUSTES*/
+.left_content_tree{
+	width: 20%; 
+	background-image: url('STYLE/treeportrait.jpg'); 
+	border-radius: 20px 0 0 20px;
+	background-size: cover;
+}
+
+/*LEGUMES*/
+.left_content_vegetable{
+	width: 20%; 
+	background-image: url('STYLE/vegetableportrait.jpg'); 
+	border-radius: 20px 0 0 20px;
+	background-size: cover;
+}
+
+/*HEADER & FOOTER*/
+#navbar{
+	display: flex;
+	justify-content: space-evenly;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw;
+	height: 10vh;
+	font-family: trebuchet, sans-serif;
+	z-index: 2;
+}
+#navbar a{text-decoration: none; color: black;}
+#navbar p{
+	padding: 1vh 2vw; 
+	border: solid 1px black; 
+	border-radius: 20px; 
+	background-color: white;
+}
+	#navbar p:hover{cursor: pointer; box-shadow: 10px 10px 30px black; font-size: 1.1em;}
+
+footer{position: absolute; bottom: 0; width: 100%;}
+	
+#link_container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-family: trebuchet, sans-serif;
+	font-weight: bold;
+	border-top: solid 2px white;
+	background-color: black;
+}
+
+#link_container a{
+	text-decoration: none;
+	color: white;
+}
+	.plantes, .fleurs, .arbustes, .legumes{
+		text-decoration: underline;
+		font-size: 1.2em;
+	}
+
+.link{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+
+/*KEYFRAMES*/
+@keyframes float{
+	0%{transform: translateY(-20px);}
+	50%{transform: translateY(20px);}
+	100%{transform: translateY(-20px);}
+}
+	
